@@ -1,0 +1,315 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17333784900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to the your logo website",
+            "match": {
+              "location": "stepdefinitions.CommonSteps.user_navigates_to_the_your_logo_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30061400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user in on the your logo landing page",
+            "match": {
+              "location": "stepdefinitions.CommonSteps.user_in_on_the_your_logo_landing_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13659902300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on the Sign in button",
+            "match": {
+              "location": "stepdefinitions.LandingPageSteps.user_click_on_the_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11968000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is navigated to login page",
+            "match": {
+              "location": "stepdefinitions.LoginPageSteps.user_is_navigated_to_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 131697300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters \"omjisaini25@gmail.com\" in username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"omjisaini25@gmail.com\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.LoginPageSteps.user_enter_s_in_username_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112171500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enters \"testwebsite\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testwebsite\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefinitions.LoginPageSteps.enters_in_password_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 695680200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.LoginPageSteps.clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-21T14:38:49.057Z",
+        "before": [
+          {
+            "result": {
+              "duration": 116456400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.readProperties()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2485760000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "appHooks.ApplicationHooks.launchBrowser(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Placing an Order",
+        "description": "",
+        "id": "end-to-end-flow-process;placing-an-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class\u003d\u0027account\u0027] (tried for 30 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.qa.util.CommonMethods.getElementWithWait(CommonMethods.java:113)\r\n\tat com.qa.util.CommonMethods.verifyIfTextIsPresent(CommonMethods.java:189)\r\n\tat stepdefinitions.LoginPageSteps.user_is_successfully_signed_in_iwth_name(LoginPageSteps.java:49)\r\n\tat ✽.user is successfully signed in with name \"Omji Saini\"(file:///C:/Users/omisa/eclipse-workspace/EndToEndCucumberFramework/src/test/resources/features/EtoEFLow.feature:16)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@class\u003d\u0027account\u0027]\"}\n  (Session info: chrome\u003d93.0.4577.82)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-GA0BEHB\u0027, ip: \u0027192.168.1.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\\Users\\omisa\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51808}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2f3488bf3229a9e7491359895b598983\n*** Element info: {Using\u003dxpath, value\u003d//a[@class\u003d\u0027account\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat com.qa.util.CommonMethods.getElementWithWait(CommonMethods.java:113)\r\n\tat com.qa.util.CommonMethods.verifyIfTextIsPresent(CommonMethods.java:189)\r\n\tat stepdefinitions.LoginPageSteps.user_is_successfully_signed_in_iwth_name(LoginPageSteps.java:49)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)\r\n\tat io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)\r\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)\r\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\r\n\tat org.testng.TestRunner.run(TestRunner.java:505)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\r\n\tat org.testng.TestNG.run(TestNG.java:1017)\r\n\tat org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)\r\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)\r\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)\r\n",
+              "duration": 30064141500,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "user is successfully signed in with name \"Omji Saini\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Omji Saini\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.LoginPageSteps.user_is_successfully_signed_in_iwth_name(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user clicks on Women tab",
+            "match": {
+              "location": "stepdefinitions.LoginPageSteps.user_clicks_on_women_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User is navigated to \"women\" products page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"women\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.ProductPageSteps.user_is_navigated_to_products_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user adds \"Printed Dress\" product to cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Printed Dress\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.ProductPageSteps.user_adds_product_to_cart(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 969400,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "product \"Printed Dress\" is added with message \"Product successfully added to your shopping cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Printed Dress\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Product successfully added to your shopping cart\"",
+                  "offset": 46
+                }
+              ],
+              "location": "stepdefinitions.ProductPageSteps.product_is_added_with_message(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 652100,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user clicks on Proceed to Checkout button",
+            "match": {
+              "location": "stepdefinitions.ProductPageSteps.user_clicks_on_proceed_to_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997400,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user is navigated to \"SHOPPING-CART SUMMARY\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SHOPPING-CART SUMMARY\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.CartSummaryPageSteps.user_is_navigated_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "product \"Printed Dress\" is shown in the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Printed Dress\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CartSummaryPageSteps.product_is_shown_in_the_cart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user clicks on Proceed to checkout button on summary page",
+            "match": {
+              "location": "stepdefinitions.CartSummaryPageSteps.user_clicks_on_proceed_to_checkout_button_on_summary_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user is navigated to \"Addresses\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Addresses\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.CartSummaryPageSteps.user_is_navigated_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "End to end Flow process",
+    "description": "  Validating the end to end flow",
+    "id": "end-to-end-flow-process",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/EtoEFLow.feature",
+    "tags": []
+  }
+]
